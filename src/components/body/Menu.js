@@ -3,15 +3,25 @@ import DISHES from "../../data/dishes";
 import MenuItem from "./MenuItem";
 import DishDetail from "./DishDetail";
 
+import {CardColumns,Modal, ModalBody, ModalFooter,Button } from 'reactstrap';
+
 class Menu extends Component { 
      state={
           dishes: DISHES,
-          selectedDish: null
+          selectedDish: null,
+          modalOpen: false
      }
      onDishSelect = dish => {
-          this.setState({selectedDish: dish});
-          console.log(this.state.selectedDish);
+          this.setState({
+               selectedDish: dish, 
+               modalOpen: !this.state.modalOpen
+          });
+     }
 
+     toggleModal = ()=>{
+          this.setState({
+               modalOpen: !this.state.modalOpen
+          });
      }
 
 
@@ -27,21 +37,27 @@ class Menu extends Component {
           })  
           let dishDetail = null;
           if (this.state.selectedDish != null){
-               // console.log(this.state)
                dishDetail = <DishDetail dish={this.state.selectedDish}/>
 
           }
-          return(
+          return (
                <div className="container">
-                    <div className="row">
-                         <div className="col-6"> 
-                              {menu}
-                         </div>
-                         <div className="col-6">
-                              {dishDetail}
-                         </div>
-
-                    </div>
+                 <div className="row">
+                   <div className="col">
+                     <CardColumns>
+                       {menu}
+                     </CardColumns>
+                   </div>
+                 </div>
+         
+                 <Modal isOpen={this.state.modalOpen} onClick={this.toggleModal}>
+                   <ModalBody>
+                     {dishDetail}
+                   </ModalBody>
+                   <ModalFooter>
+                     <Button color="secondary" onClick={this.toggleModal}>Close</Button>
+                   </ModalFooter>
+                 </Modal>
                </div>
           );
      }
