@@ -7,29 +7,6 @@ const DISHES = [
           label: 'Hot',
           price: '299',
           description: 'You don’t need to install or configure tools like webpack or Babel. They are preconfigured and hidden so that you can focus on the code. Create a project, and you’re good to go.',
-          comments: [
-               {
-                    id: 0,
-                    rating: 5,
-                    comments: 'Yummy and hot, living in a chezzz side.',
-                    author: "Shanto",
-                    date: '2018-10-16T17:57:28.34534'
-               },
-               {
-                    id: 1,
-                    rating: 5,
-                    comments: 'Tasty and hot, living in a chezzz side.',
-                    author: "Shafin",
-                    date: '2018-10-16T17:57:28.34534'
-               },
-               {
-                    id: 2,
-                    rating: 5,
-                    comments: 'Yummy and hot, living in a chezzz side.',
-                    author: "Kashif",
-                    date: '2018-10-16T17:57:28.34534'
-               },
-          ]
      },
      {
           id: 1,
@@ -39,29 +16,6 @@ const DISHES = [
           label: 'Cool',
           price: '355',
           description: 'You don’t need to install or configure tools like webpack or Babel. They are preconfigured and hidden so that you can focus on the code. Create a project, and you’re good to go.',
-          comments: [
-               {
-                    id: 0,
-                    rating: 5,
-                    comments: 'Yummy and hot, living in a chezzz side.',
-                    author: "Shanto",
-                    date: '2018-10-16T17:57:28.34534'
-               },
-               {
-                    id: 1,
-                    rating: 5,
-                    comments: 'Tasty and hot, living in a chezzz side.',
-                    author: "Shafin",
-                    date: '2018-10-16T17:57:28.34534'
-               },
-               {
-                    id: 2,
-                    rating: 5,
-                    comments: 'Yummy and hot, living in a chezzz side.',
-                    author: "Kashif",
-                    date: '2018-10-16T17:57:28.34534'
-               },
-          ]
      },
      {
           id: 2,
@@ -71,29 +25,6 @@ const DISHES = [
           label: 'Hot',
           price: '199',
           description: 'You don’t need to install or configure tools like webpack or Babel. They are preconfigured and hidden so that you can focus on the code. Create a project, and you’re good to go.',
-          comments: [
-               {
-                    id: 0,
-                    rating: 5,
-                    comments: 'Yummy and hot, living in a chezzz side.',
-                    author: "Shanto",
-                    date: '2018-10-16T17:57:28.34534'
-               },
-               {
-                    id: 2,
-                    rating: 5,
-                    comments: 'Tasty and hot, living in a chezzz side.',
-                    author: "Shafin",
-                    date: '2018-10-16T17:57:28.34534'
-               },
-               {
-                    id: 3,
-                    rating: 5,
-                    comments: 'Yummy and hot, living in a chezzz side.',
-                    author: "Kashif",
-                    date: '2018-10-16T17:57:28.34534'
-               },
-          ]
      },
      {
           id: 3,
@@ -103,29 +34,15 @@ const DISHES = [
           label: 'Hot',
           price: '400',
           description: 'You don’t need to install or configure tools like webpack or Babel. They are preconfigured and hidden so that you can focus on the code. Create a project, and you’re good to go.',
-          comments: [
-               {
-                    id: 0,
-                    rating: 5,
-                    comments: 'Yummy and hot, living in a chezzz side.',
-                    author: "Shanto",
-                    date: '2018-10-16T17:57:28.34534'
-               },
-               {
-                    id: 2,
-                    rating: 5,
-                    comments: 'Tasty and hot, living in a chezzz side.',
-                    author: "Shafin",
-                    date: '2018-10-16T17:57:28.34534'
-               },
-               {
-                    id: 3,
-                    rating: 5,
-                    comments: 'Yummy and hot, living in a chezzz side.',
-                    author: "Kashif",
-                    date: '2018-10-16T17:57:28.34534'
-               },
-          ]
+     },
+     {
+          id: 4,
+          name: 'The Husky Burger',
+          image: 'assets/images/burger5.jpg',
+          category: 'meal',
+          label: 'Cool',
+          price: '350',
+          description: 'You don’t need to install or configure tools like webpack or Babel. They are preconfigured and hidden so that you can focus on the code. Create a project, and you’re good to go.',
      }
 
 

@@ -1,8 +1,15 @@
 import React from 'react';
 
-function Footer() {
+const Footer = () => {
   return (
-    <div>
+    <div className='footer'>
+      <div className='container'>
+        <div className="row justify-content-center">
+          <div classname="col-auto">
+            <p>Cafe-420 &#169; Copyright 2023</p>
+          </div>
+        </div>
+      </div>
       
     </div>
   );
